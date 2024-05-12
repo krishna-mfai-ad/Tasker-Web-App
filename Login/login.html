@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container-login">
+        <div class="login-holder">
+            <div class="left-part">
+                <img src="../images/logo1.jpeg" height="400px" width="400px" alt="">
+            </div>
+            <div class="right-part">
+                <h1>
+                    Welcome To Tasker
+                </h1>
+                <p>
+                    Enter Your Credentials to access your tasks
+                </p>
+                <section class="email">
+                    <span>
+                        Email
+                    </span>
+                    <input type="email" id="emailID">
+                </section>
+                <p id="emailStatus">
+                        
+                </p>
+                <section class="password">
+                    <span>
+                        Password
+                    </span>
+                    <input type="password" id="password">    
+                </section>
+                <p id="passStatus">
+
+                </p>
+                <section class="tickBox">
+                    <input type="checkbox">
+                    <span>
+                        Remember Me
+                    </span>
+                </section>
+                
+                <button class="signin" onclick="signing()" >SIGN IN</button>
+                <p class="dontAccount">
+                    Don't Have an Account? 
+                    <a href="../SignUp Page/signUp.html">
+                        Sign Up Here!
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
