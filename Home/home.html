@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="homeContainer">
+        <div class="left-bar">
+            <div class="top-bar">
+                <img src="../images/logo1.jpeg" class="logo-home" height="70px" width="70px" alt="">
+                <h3>
+                    Tasker
+                </h3>
+            </div>
+
+            <section class="list-left-home">
+                <ul>
+                    <li>
+                        <img src="../images/ic--baseline-task.png" alt="">
+                         Task
+                    </li>
+                    <li>
+                        <img src="../images/carbon--category-new-each.png" alt="">
+                        <select name="category" id="Category">
+                            <option>Category</option>
+                            <option value="">Home</option>
+                            <option value="">School</option>
+                            <option value="">Shopping</option>
+                        </select>
+                    </li>
+                    <li>
+                        <img src="../images/ic--round-settings.png" alt="">
+                        Settings
+                    </li>
+                </ul>
+                
+            </section>
+
+            <div class="bottom-left-home">
+                <img src="../images/solar--logout-2-bold.png" alt="">
+                <a href="../login-page/login.html">
+                    Logout
+                </a>
+            </div>
+        </div>
+        <div class="right-home">
+            
+                <h1 class="header-home">
+                    Tasker's Home
+                </h1>
+            <div class="display-bar">
+                <span>
+                    Tasks
+                </span>
+                <ul>
+                    <li>
+                        <button>
+                            All
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            Done
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            Not Done
+                        </button>
+                    </li>
+                    <img src="../images/iconoir--filter-solid (1).png"class="filter-icon" alt="">
+                </ul>
+
+            </div>
+            <div class="task-display">
+               <ul id="pushTask">
+
+               </ul>
+               <button id="addBtn">
+                    <img src="../images/ph--plus-fill (1).png" alt="">
+                    ADD TASK
+               </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
