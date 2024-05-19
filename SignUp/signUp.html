@@ -3,57 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign Up for Tasker</title>
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <div class="signup-container">
         <div class="signup-content">
             <div class="img-signup-part">
-            <img class="img-signup" src="../images/bg2.jpg" alt="">
-             </div>
+                <img class="img-signup" src="../images/bg2.jpg" alt="Background Image">
+            </div>
         
             <div class="signup-Holder">
-                <h1>
-                    Signing Up For Tasker!
-                </h1>
-                <span>
-                    Name
-                </span>
-                <input type="text">
-                <span>
-                    Email
-                </span>
-                <input type="email">
-                <span>
-                    Password
-                </span>
-                <input type="password">
-                <p>
-                    <input type="checkbox">
-                    I agree to
-                    <span>
-                        <i>
-                            Terms and Services
-                        </i>
-                    </span>
-                </p>
-                <button>
-                    SIGN UP
-                </button>
-                <p class="signin-account">
-                    <i>
-                        Have an Account? <a href="../login-page/login.html">
-                            Sign In
-                        </a>
-                    </i>
+                <h1>Signing Up For Tasker!</h1>
+                <form action="/submit_signup" class="signup-Holder" method="post">
+                    <label for="username">Name</label>
+                    <input id="username" name="username" type="text" required>
                     
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" required>
+                    
+                    <label for="password">Password</label>
+                    <input id="password" name="password" type="password" required>
+                    
+                    <p>
+                        <input id="terms" type="checkbox" required>
+                        <label for="terms">I agree to <i>Terms and Services</i></label>
+                    </p>
+                    
+                    <button id="signupBtn" type="submit">
+                        SIGN UP
+                    </button>
+                </form>
+                <p class="signin-account">
+                    <i>Have an Account? <a href="../login-page/login.html">Sign In</a></i>
                 </p>
             </div>
         </div>
-        
-      
-
     </div>
+    <script src="signUp.js"></script>
 </body>
 </html>
