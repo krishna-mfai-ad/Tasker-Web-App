@@ -176,8 +176,8 @@
     font-family: "Montserrat", sans-serif;
     letter-spacing: 5px;
     padding: 10px;
-    background: rgb(6, 23, 78);
-    color: white;
+    background: rgb(255, 255, 255);
+    color: rgb(243, 5, 5);
     border-radius: 10px;
     border: 0;
 }
@@ -263,7 +263,11 @@ select {
     background:transparent;
     border-radius: 20px;
     padding: 5px;
-    color: white;
+    color: rgb(255, 255, 255);
+    option{
+        background:white;
+        color: black;
+    }
 }
 
 li img {
@@ -280,6 +284,7 @@ li img {
 /* Right Portion Home */
 
 .right-home{
+    position: relative;
     width: 82.3%;
     padding: 0px 50px 0px;
     font-family: "Montserrat", sans-serif;
@@ -316,7 +321,8 @@ li img {
 .filter-icon{
     height: 30px;
 }
-#addBtn{
+#addTaskBtn{
+    
     width: 100%;
     display: flex;
     justify-content: center;
@@ -330,4 +336,49 @@ li img {
     img{
         height: 20px;
     }
+}
+
+/* Task Adding Box */
+
+.task-add-box{
+    font-size: small;
+    position: absolute;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color:#053857;
+    color: #C9CCBB;
+    align-items: center;
+    justify-content: center;
+    left: 500px;
+    top: 250px;
+    input{
+        width: 200px;
+        padding: 5px;
+        border-radius: 20px;
+        border: 0px;
+    }
+    select{
+        width: 200px;
+        padding: 5px;
+        border: 1px solid white;
+    }
+}
+
+/* HOME Task in Display  */
+.taskOne{
+    background-color:#053857;
+    margin: 5px;
+    color: #C9CCBB;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.innerTasjOne{
+    display: flex;
+
 }
